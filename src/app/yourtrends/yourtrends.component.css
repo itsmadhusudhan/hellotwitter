@@ -1,0 +1,25 @@
+.your__trends{
+  margin-top:10px;
+  background: #fff;
+  padding: 10px;
+}
+
+.your__trends a{
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.twitter__trend--tag{
+  margin-bottom: 10px;
+}
+
+.twitter__trend--tag-link span{
+  font-size: 14px;
+  font-weight: 700;
+  color: #0b3c49;
+}
+
+.twitter__trend--tag-stats{
+  color: #0b3c49;
+  
+}

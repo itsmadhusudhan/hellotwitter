@@ -7,6 +7,7 @@ import { HomelayoutComponent } from './homelayout/homelayout.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomecontainerComponent } from './homecontainer/homecontainer.component';
 import { ProfilecardComponent } from './profilecard/profilecard.component';
+import { YourtrendsComponent } from './yourtrends/yourtrends.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ProfilecardComponent } from './profilecard/profilecard.component';
     HomelayoutComponent,
     NavbarComponent,
     HomecontainerComponent,
-    ProfilecardComponent
+    ProfilecardComponent,
+    YourtrendsComponent
   ],
   imports: [
     BrowserModule
