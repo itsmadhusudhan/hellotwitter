@@ -1,0 +1,204 @@
+/* holds the whole new tweet */
+.newtweet {
+  padding: 20px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+/* user picture displayed with new tweet */
+.user__avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.user__avatar img {
+  border-radius: 50%;
+}
+
+/* button to add new photo to the tweet */
+.newtweet__photoselector {
+  position: absolute;
+  right: 30px;
+  top: 25px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.newtweet__photoselector span {
+  position: relative;
+  display: block;
+  z-index: 05;
+}
+
+.photo__label {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.file__input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+
+input[type="file"] {
+  box-shadow: none;
+}
+
+/* new text form to add a new tweet */
+.newtweet__container {
+  flex: 1;
+}
+
+.newtweet__form {
+  height: 80px;
+  box-sizing: border-box;
+  position: relative;
+  line-height: 20px;
+  outline: none;
+  background: #fff;
+  overflow: hidden;
+}
+
+.newtweet__form--condensed {
+  /* height: auto; */
+}
+
+.newtweet__box {
+  background: #fff;
+  padding: 5px 10px 10px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  overflow: hidden;
+  outline: none;
+  word-wrap: break-word;
+  direction: ltr;
+}
+
+.newtweet__box::before {
+  content: attr(data-placeholder-default);
+  position: absolute;
+  overflow: hidden;
+}
+
+/* toolbar */
+.tweetbox__toolbar {
+  position: relative;
+}
+
+.add__photo {
+  cursor: pointer;
+}
+
+.file__input--button {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  display: none;
+  z-index: 100;
+}
+
+
+
+
+
+/* navbar styles */
+.navbar {
+  min-height: 2.9rem;
+  position: relative;
+  align-items: center;
+}
+
+@media screen and (min-width: 972px) {
+  .navbar {
+    display: flex;
+  }
+}
+
+.navbar__brand {
+  display: flex;
+  flex-shrink: 0;
+  align-items: stretch;
+  min-height: 2.9rem;
+}
+
+@media screen and (min-width: 972px) {
+  .navbar__brand {
+    align-items: center;
+  }
+}
+
+.navbar__brand .navbar__item {
+  font-size: 20px;
+}
+
+.navbar__menu {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  align-items: stretch;
+}
+
+@media screen and (min-width: 972px) {
+  .navbar__menu {
+    align-items: center;
+  }
+}
+
+.navbar__item,
+.navabar__link {
+  display: flex;
+  padding: 0.5rem 1rem;
+  position: relative;
+  line-height: 1.1;
+}
+
+.navbar__start {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: auto;
+  align-items: stretch;
+}
+
+.navbar__end {
+  display: flex;
+  justify-content: flex-end;
+  align-items:center;
+  margin-left: auto;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+.button--tweet-small {
+  border-radius: 20px;
+  background: rgba(11, 60, 73, 0.75);
+  color: #fafafa;
+  font-weight: 700;
+  margin-right: -15px;
+}
+
+.button--tweet-small:hover {
+  background: rgb(11, 60, 73);
+}
+
+.icon{
+  font-size: 20px;
+}
+.plus{
+  background: #fff;
+  border-radius: 50%;
+
+}
+
