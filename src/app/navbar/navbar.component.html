@@ -1,37 +1,62 @@
 <div class="twitter__navbar--container navbar--fixed">
   <nav class="navbar">
+
     <div class="navbar__menu">
+
       <div class="navbar__start">
-        <a href="" class="navbar__item navbar__item__active">
-          <i class="fa fa-home icon"></i> Home</a>
-        <a href="" class="navbar__item">
-          <i class="fa fa-bolt icon"></i>Moments</a>
-        <a href="" class="navbar__item">
-          <i class="fa fa-bell icon"></i>Notifications</a>
-        <a href="" class="navbar__item">
-          <i class="fa fa-envelope icon"></i>Messages</a>
+
+        <a routerLink="" class="navbar__item menu__link navbar__item__active" (click)="changeActive($event)">
+          <i class="fa fa-home icon"></i>
+          Home
+        </a>
+
+        <a routerLink="moments" class="navbar__item menu__link" (click)="changeActive($event)">
+          <i class="fa fa-bolt icon"></i>
+          Moments
+        </a>
+
+        <a routerLink="notifications" class="navbar__item menu__link" (click)="changeActive($event)">
+          <i class="fa fa-bell icon"></i>
+          Notifications
+        </a>
+
+        <a routerLink="messages" class="navbar__item">
+          <i class="fa fa-envelope icon"></i>
+          Messages
+        </a>
+
       </div>
+
       <div class="navbar__brand twitter__brand">
         <a href="" class="navbar__item">
           <i class="fab fa-twitter icon--brand"></i>
         </a>
       </div>
+      <!-- twitter brand ends -->
+
       <div class="navbar__end">
+
         <div class="navbar__item nav__end--item search__item">
           <input type="text" placeholder="Search Twitter" class="searchbar">
           <span class="search--icon">
             <i class="fa fa-search"></i>
           </span>
         </div>
+        
         <div class="navbar__item nav__end--item">
           <img src="../../assets/images/madhu.jpg" alt="" class="user__avatar">
         </div>
+
         <p class=" navbar__item nav__end--item">
           <a href="" class="button button--tweet">
             <span>Tweet</span>
           </a>
         </p>
+
       </div>
+      <!-- navbar end ends -->
     </div>
+    <!-- menu ends -->
   </nav>
+  <!-- navbar ends -->
 </div>

@@ -12,15 +12,15 @@
 
   <div class="profile__user-info">
       <div class="profile__user--tweets-count">
-        <a href="{{userInfo.username}}">Tweets</a>
+        <a routerLink="{{userInfo.username}}">Tweets</a>
         <p class="count">{{userInfo.tweets}} </p>
       </div>
       <div class="profile__user--following-count">
-        <a href="{{userInfo.username}}/following">Following</a>
+        <a routerLink="{{userInfo.username}}/following">Following</a>
         <p class="count">{{userInfo.following}}</p>
       </div>
       <div class="profile__user--followers-count">
-        <a href="{{userInfo.username}}/followers">Followers</a>
+        <a routerLink="{{userInfo.username}}/followers">Followers</a>
         <p class="count">{{userInfo.followers}} </p>
       </div>
   </div>
