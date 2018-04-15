@@ -1,0 +1,61 @@
+<div class="userprofile__cover">
+  <div class="profile__cover-image">
+    <img src="../../assets/images/codingtitan.png" alt="cover image">
+  </div>
+  <!-- image ends -->
+  <div class="userprofile__image">
+    <img src="../../assets/images/madhu.jpg" alt="Madhusudhan">
+  </div>
+
+  <div class="navbar__cover--container">
+    <div class="cover__navbar">
+      <div class="cover__navbar--start">
+        <div class="cover__navbar--item profile__user--tweets-count navbar__item__active">
+          <a routerLink="/{{userInfo.username}}">Tweets
+            <p class="count">{{userInfo.tweets}} </p>
+          </a>
+
+        </div>
+        <div class="cover__navbar--item profile__user--following-count">
+          <a routerLink="/following">Following
+            <p class="count">{{userInfo.following}}</p>
+          </a>
+
+        </div>
+        <div class="cover__navbar--item profile__user--followers-count">
+          <a routerLink="/followers">Followers
+            <p class="count">{{userInfo.followers}} </p>
+          </a>
+
+        </div>
+        <div class="cover__navbar--item profile__user--likes-count">
+          <a routerLink="/{{userInfo.username}}/likes">Likes
+            <p class="count">{{userInfo.likes}} </p>
+          </a>
+
+        </div>
+        <div class="cover__navbar--item profile__user--lists-count">
+          <a routerLink="/{{userInfo.username}}/lists">Lists
+            <p class="count">{{userInfo.lists}} </p>
+          </a>
+
+        </div>
+        <div class="cover__navbar--item profile__user--moments-count">
+          <a routerLink="/{{userInfo.username}}/moments">Moments
+            <p class="count">{{userInfo.moments}} </p>
+          </a>
+
+        </div>
+      </div>
+      <div class="cover__navbar--end">
+        <div class="profile__button">
+          <a href="" class="button button--profile">
+            <span>Edit Profile</span>
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>

@@ -6,7 +6,7 @@
 }
 
 .profile__card--cover-image {
-  width: 100%;
+  max-width: 100%;
 }
 
 .profile__user--avatar {

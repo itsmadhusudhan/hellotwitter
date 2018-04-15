@@ -137,3 +137,11 @@
   position: relative;
   line-height: 1;
 }
+
+.tweet__content--action-like-icon i:hover{
+  color:red;
+}
+
+.retweet__activve{
+  color: green;
+}

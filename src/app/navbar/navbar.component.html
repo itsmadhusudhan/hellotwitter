@@ -5,17 +5,17 @@
 
       <div class="navbar__start">
 
-        <a routerLink="" class="navbar__item menu__link navbar__item__active" (click)="changeActive($event)">
+        <a (click)="setActive('home')"   routerLink="" class="navbar__item menu__link {{getActive('home')}}">
           <i class="fa fa-home icon"></i>
           Home
         </a>
 
-        <a routerLink="moments" class="navbar__item menu__link" (click)="changeActive($event)">
+        <a (click)="setActive('moments')" routerLink="moments" class="navbar__item menu__link {{getActive('moments')}}">
           <i class="fa fa-bolt icon"></i>
           Moments
         </a>
 
-        <a routerLink="notifications" class="navbar__item menu__link" (click)="changeActive($event)">
+        <a (click)="setActive('notifications')"  routerLink="notifications" class="navbar__item menu__link {{getActive('notifications')}}">
           <i class="fa fa-bell icon"></i>
           Notifications
         </a>

@@ -1,0 +1,121 @@
+.userprofile__cover {
+  margin-top: -15px;
+  /* overflow: hidden; */
+  position: relative;
+}
+
+.profile__cover-image {
+  height: 380px;
+  overflow: hidden;
+  border: 1px solid #0b3c49;
+}
+
+.profile__cover-image img {
+  /* height: 100%; */
+  max-width: 100%;
+  position: relative;
+}
+
+.userprofile__image {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 260px;
+  left: 90px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  background: #fff;
+}
+
+.userprofile__image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+/* navbar */
+.navbar__cover--container {
+  background: #fff;
+}
+
+.cover__navbar {
+  display: flex;
+  max-width: 960px;
+  margin-left: auto;
+  min-height: 2.9rem;
+  padding: 0.4rem 1rem;
+  box-shadow: 0 2px 2px rgba(38, 38, 38, 0.1);
+  align-items: center;
+}
+
+.cover__navbar--item {
+  margin-right: 20px;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  padding: 0.3rem 1rem;
+  position: relative;
+  /* line-height: 1.1; */
+  flex-direction: column;
+}
+
+.cover__navbar--item a {
+  font-size: 12px;
+  color: #657786;
+}
+
+.count {
+  display: block;
+  margin-top: -5px;
+  font-size: 18px;
+  color: #445869;
+}
+
+.count:hover {
+  color: #0b3c49;
+}
+
+.navbar__item__active {
+  color: rgb(11, 60, 73);
+  border-bottom: 2px solid rgb(11, 60, 73);
+  margin-bottom: -7px;
+}
+
+.cover__navbar--start {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: auto;
+  align-items: stretch;
+}
+
+.cover__navbar--end {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  align-items: stretch;
+}
+
+.profile__button{
+  display: block;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  padding: 0.2rem 1.2rem;
+}
+
+.button--profile {
+  margin-left: auto;
+  border-radius: 20px;
+  border: 1px solid rgba(11, 60, 73, 0.75);
+  color: #fafafa;
+  margin-right: 5px;
+  color: rgba(11, 60, 73, 0.75);
+}
+
+.button--profile:hover {
+  background: rgb(11, 60, 73);
+  color:#fff;
+}

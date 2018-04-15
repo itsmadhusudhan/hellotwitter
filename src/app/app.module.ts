@@ -14,11 +14,14 @@ import { TweetsComponent } from "./tweets/tweets.component";
 import { TweetComponent } from "./tweet/tweet.component";
 import { UserprofilelayoutComponent } from "./userprofilelayout/userprofilelayout.component";
 import { MomentsComponent } from './moments/moments.component';
+import { UserprofilecontainerComponent } from './userprofilecontainer/userprofilecontainer.component';
+import { UserprofilecoverComponent } from './userprofilecover/userprofilecover.component';
 
 //Routes
 const appRoutes: Routes = [
   { path: "", component: HomelayoutComponent, pathMatch: 'full' },
   {path:"moments", component:MomentsComponent},
+  {path:"notifications", component:MomentsComponent},  
   { path: "itsmadhusudhan", component: UserprofilelayoutComponent },
   { path: "**", component: UserprofilelayoutComponent }
 ];
@@ -36,7 +39,9 @@ const appRoutes: Routes = [
     TweetsComponent,
     TweetComponent,
     UserprofilelayoutComponent,
-    MomentsComponent
+    MomentsComponent,
+    UserprofilecontainerComponent,
+    UserprofilecoverComponent
   ],
   imports: [
     BrowserModule,

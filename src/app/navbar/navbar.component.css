@@ -1,14 +1,9 @@
-:root {
-  --navbar__link--color: #0b3c49;
-}
-
 .navbar {
-  background: #fafafa;
+  background: #fff;
   min-height: 2.9rem;
   position: relative;
   align-items: center;
 }
-
 
 @media screen and (min-width: 972px) {
   .navbar {
@@ -96,7 +91,7 @@
   background-color: #fff;
   box-shadow: 0 1px 3px rgba(38, 38, 38, 0.1);
   position: fixed;
-  top:0;
+  top: 0;
   width: 100%;
   z-index: 500;
 }
@@ -173,6 +168,7 @@
 
 .searchbar:focus {
   border: 2px solid rgb(11, 60, 73);
+  background: #fff;
 }
 
 .search--icon {
