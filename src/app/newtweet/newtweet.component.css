@@ -66,6 +66,12 @@ input[type="file"] {
   outline: none;
   background: #fff;
   overflow: hidden;
+  border-radius: 10px;
+  border:1px solid #9DB1B6;
+}
+
+.newtweet__form:focus{
+  border:2px solid #0B3C49;
 }
 
 .newtweet__form--condensed {
@@ -80,13 +86,13 @@ input[type="file"] {
   overflow: hidden;
   outline: none;
   word-wrap: break-word;
-  direction: ltr;
 }
 
 .newtweet__box::before {
   content: attr(data-placeholder-default);
   position: absolute;
   overflow: hidden;
+  color:#9DB1B6;
 }
 
 /* toolbar */
