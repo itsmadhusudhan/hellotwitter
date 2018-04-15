@@ -1,0 +1,6 @@
+.notification__container{
+  padding: 60px 80px;
+  display: grid;
+  grid-template-columns: 290px 1fr 290px;
+  grid-gap: 10px;
+}

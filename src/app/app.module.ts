@@ -16,12 +16,14 @@ import { UserprofilelayoutComponent } from "./userprofilelayout/userprofilelayou
 import { MomentsComponent } from './moments/moments.component';
 import { UserprofilecontainerComponent } from './userprofilecontainer/userprofilecontainer.component';
 import { UserprofilecoverComponent } from './userprofilecover/userprofilecover.component';
+import { NotificationlayoutComponent } from './notificationlayout/notificationlayout.component';
+import { NotificationsComponent } from './notifications/notifications.component';
 
 //Routes
 const appRoutes: Routes = [
   { path: "", component: HomelayoutComponent, pathMatch: 'full' },
   {path:"moments", component:MomentsComponent},
-  {path:"notifications", component:MomentsComponent},  
+  {path:"notifications", component:NotificationlayoutComponent},  
   { path: "itsmadhusudhan", component: UserprofilelayoutComponent },
   { path: "**", component: UserprofilelayoutComponent }
 ];
@@ -41,7 +43,9 @@ const appRoutes: Routes = [
     UserprofilelayoutComponent,
     MomentsComponent,
     UserprofilecontainerComponent,
-    UserprofilecoverComponent
+    UserprofilecoverComponent,
+    NotificationlayoutComponent,
+    NotificationsComponent
   ],
   imports: [
     BrowserModule,

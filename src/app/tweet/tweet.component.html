@@ -6,7 +6,7 @@
     </div>
     <div class="tweet__retweet--content" *ngFor="let user of tweet.retweet.users">
       <span>
-        <a href={{user.username}}>
+        <a routerLink="{{user.username}}">
           {{user.userFullname}}</a> Retweeted
       </span>
     </div>
@@ -17,7 +17,7 @@
       </div>
       <div class="tweet__retweet--content" *ngFor="let user of tweet.liked.users">
         <span>
-          <a href={{user.username}}>
+          <a routerLink="/{{user.username}}">
             {{user.userFullname}}</a> Retweeted
         </span>
       </div>
@@ -26,7 +26,7 @@
   <div class="tweet__content">
 
     <div class="tweet__content--header">
-      <a href={{tweet.username}} class="tweet__content--user-info">
+      <a routerLink="/{{tweet.username}}" class="tweet__content--user-info">
 
         <img src={{tweet.imgUrl}} alt={{tweet.userFullname}} class="tweet__content--user-avatar">
 
