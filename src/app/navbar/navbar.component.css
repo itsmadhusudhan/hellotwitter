@@ -9,6 +9,7 @@
   align-items: center;
 }
 
+
 @media screen and (min-width: 972px) {
   .navbar {
     display: flex;
@@ -92,8 +93,12 @@
 /* specially for hello twitter */
 .twitter__navbar--container {
   padding: 0 80px;
-  background-color: #fafafa;
+  background-color: #fff;
   box-shadow: 0 1px 3px rgba(38, 38, 38, 0.1);
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index: 500;
 }
 
 .twitter__brand {
