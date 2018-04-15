@@ -1,0 +1,109 @@
+<div class="tweet">
+
+  <div class="tweet__retweet" *ngIf="tweet.retweet.status===true">
+    <div class="tweet__retweet--icon">
+      <i class="fas fa-retweet"></i>
+    </div>
+    <div class="tweet__retweet--content" *ngFor="let user of tweet.retweet.users">
+      <span>
+        <a href={{user.username}}>
+          {{user.userFullname}}</a> Retweeted
+      </span>
+    </div>
+  </div>
+  <div class="tweet__retweet" *ngIf="tweet.liked.status===true && tweet.liked">
+      <div class="tweet__retweet--icon">
+        <i class="fas fa-heart"></i>
+      </div>
+      <div class="tweet__retweet--content" *ngFor="let user of tweet.liked.users">
+        <span>
+          <a href={{user.username}}>
+            {{user.userFullname}}</a> Retweeted
+        </span>
+      </div>
+    </div>
+
+  <div class="tweet__content">
+
+    <div class="tweet__content--header">
+      <a href={{tweet.username}} class="tweet__content--user-info">
+
+        <img src={{tweet.imgUrl}} alt={{tweet.userFullname}} class="tweet__content--user-avatar">
+
+        <span class="tweet__content--user-fullname">
+          <strong>{{tweet.userFullname}}</strong>
+        </span>
+        <span class="tweet__content--username">
+          <b>@{{tweet.username}}</b>
+        </span>
+      </a>
+      <small class="tweet__content--time">
+        <a href="" class="tweet__content--timestamp">{{tweet.time}}</a>
+      </small>
+      <div class="tweet__actions">
+        <div class="tweet__actions--dropdown">
+          <i class="fas fa-angle-down"></i>
+        </div>
+      </div>
+    </div>
+    <!-- tweet header ends -->
+    <div class="tweet__content--container">
+      <p class="tweet__content--text-container">
+        {{tweet.tweetContent}}
+      </p>
+    </div>
+    <!-- tweet content container ends here -->
+
+    <div class="tweet__content--footer">
+      <div class="tweet__content--actions-navbar">
+        <div class="tweet__content--action tweet__content--action-reply">
+          <button class="tweet__content--action-button">
+            <span class="tweet__content--action-reply-icon">
+              <i class="fas fa-comment"></i>
+            </span>
+            <span class="tweet__content--action-count">
+              {{tweet.replyCount}}
+            </span>
+          </button>
+        </div>
+        <!-- tweet reply ends -->
+
+        <div class="tweet__content--action tweet__content--action-retweet">
+          <button class="tweet__content--action-button">
+            <span class="tweet__content--action-retweet-icon">
+              <i class="fas fa-retweet"></i>
+            </span>
+            <span class="tweet__content--action-count">
+              {{tweet.retweetCount}}
+            </span>
+          </button>
+        </div>
+        <!-- tweet retweet ends -->
+
+        <div class="tweet__content--action tweet__content--action-like">
+          <button class="tweet__content--action-button">
+            <span class="tweet__content--action-like-icon">
+              <i class="fas fa-heart"></i>
+            </span>
+            <span class="tweet__content--action-count">
+              {{tweet.likeCount}}
+            </span>
+          </button>
+        </div>
+        <!-- tweet like ends -->
+
+        <div class="tweet__content--action tweet__content--action-message">
+          <button class="tweet__content--action-button">
+            <span class="tweet__content--action-message-icon">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </button>
+        </div>
+        <!-- tweet message ends -->
+      </div>
+      <!-- tweet actions ends  -->
+    </div>
+    <!-- tweet footer ends -->
+  </div>
+
+</div>

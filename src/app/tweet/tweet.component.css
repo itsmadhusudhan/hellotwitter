@@ -1,0 +1,139 @@
+.tweet {
+  background: #fff;
+  cursor: pointer;
+  color: #0b3c49;
+  padding: 10px;
+  border-bottom: 1px solid #ece6f0;
+  position: relative;
+  min-height: 51px;
+}
+
+.tweet__retweet {
+  display: flex;
+  font-size: 12px;
+  color: #657786;
+  line-height: 20px;
+  padding-left: 30px;
+}
+
+.tweet__retweet a {
+  color: #657786;
+}
+
+.tweet__retweet--content {
+  margin-left: 5px;
+}
+
+.tweet__retweet--content a:hover {
+  text-decoration: underline;
+}
+
+.tweet__content {
+  display: block;
+  margin-left: 58px;
+}
+
+.tweet__content--header {
+  display: flex;
+  position: relative;
+  font-size: 14px;
+}
+
+.tweet__content--user-info {
+  display: inline-flex;
+  flex-shrink: 1;
+  margin-right: 5px;
+}
+
+.tweet__content--user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  /* display: block; */
+  position: absolute;
+  float: left;
+  margin-left: -58px;
+  margin-right: 5px;
+}
+
+.tweet__content--user-fullname {
+  display: flex;
+  max-width: 100%;
+  padding-right: 5px;
+}
+
+.tweet__content--user-fullname:hover {
+  text-decoration: underline;
+}
+
+.tweet__content--username b {
+  font-weight: 400;
+  color: #657786;
+}
+
+.tweet__content--time {
+  display: block;
+}
+
+.tweet__content--time:before {
+  content: "\00b7";
+}
+
+.tweet__content--timestamp {
+  font-size: 14px;
+  color: #657786;
+}
+
+/* tweet actions */
+.tweet__actions {
+  min-width: inherit;
+  margin: 2px 0 0 auto;
+}
+
+.tweet__actions--dropdown i {
+  font-size: 18px;
+}
+
+/* container */
+.tweet__content--text-container {
+  /* white-space:pre-wrap; */
+  word-wrap: break-word;
+  font-size: 14px;
+}
+
+/* tweet footer */
+.tweet__content--footer {
+  display: block;
+  padding-top: 3px;
+  cursor: pointer;
+}
+
+.tweet_content--actions-navbar {
+  display: flex;
+}
+
+.tweet__content--action {
+  display: inline-block;
+  min-width: 80px;
+}
+
+.tweet__content--action-button {
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  color: #657786;
+  line-height: 1;
+  padding: 0 2px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.tweet__content--action-count {
+  font-size: 12px;
+  margin-left: 6px;
+  display: inline-block;
+  position: relative;
+  line-height: 1;
+}

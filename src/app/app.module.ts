@@ -10,6 +10,8 @@ import { ProfilecardComponent } from './profilecard/profilecard.component';
 import { YourtrendsComponent } from './yourtrends/yourtrends.component';
 import { NewtweetComponent } from './newtweet/newtweet.component';
 import { CopyrightComponent } from './copyright/copyright.component';
+import { TweetsComponent } from './tweets/tweets.component';
+import { TweetComponent } from './tweet/tweet.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { CopyrightComponent } from './copyright/copyright.component';
     ProfilecardComponent,
     YourtrendsComponent,
     NewtweetComponent,
-    CopyrightComponent
+    CopyrightComponent,
+    TweetsComponent,
+    TweetComponent
   ],
   imports: [
     BrowserModule
