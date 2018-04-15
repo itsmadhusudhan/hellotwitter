@@ -9,6 +9,11 @@ export class CopyrightComponent implements OnInit {
 
   constructor() { }
 
+  copyright:any=[
+ "About", "Help", "Center", "Terms", "Privacypolicy", "Cookies", "Ads", "info", "Brand", "Blog",
+  "Status", "Apps", "Jobs", "Marketing", "Businesses", "Developers"
+  ]
+
   ngOnInit() {
   }
 

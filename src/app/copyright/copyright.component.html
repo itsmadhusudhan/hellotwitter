@@ -1,3 +1,13 @@
-<p>
-  copyright works!
-</p>
+
+<div class="twitter__copyright">
+ <p>
+    <i class="fas fa-copyright icon"></i>
+    <span>2018 Twitter</span>
+    <span *ngFor="let item of copyright">
+   <a href="" class="twitter__copyright--info">
+     {{item}}
+   </a>
+  </span>
+ </p> 
+
+</div>
