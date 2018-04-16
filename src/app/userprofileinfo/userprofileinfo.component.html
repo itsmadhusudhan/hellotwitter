@@ -1,0 +1,27 @@
+<div class="userprofileinfo__container">
+  <div class="user__fullname user">
+    <a href="">{{userInfo.userFullname}}</a>
+  </div>
+  <div class="user__username user">
+    <a routerLink="/{{userInfo.username}}">@{{userInfo.username}}</a>
+  </div>
+  <div class="user__desc user">
+    <p>{{userInfo.desc}}</p>
+  </div>
+  <div class="user__place user">
+    <i class="fas fa-map-marker-alt"></i>
+    <a routerLink="">{{userInfo.place}}</a>
+  </div>
+  <div class="user__link user">
+    <i class="fas fa-link"></i>
+    <a href="https://{{userInfo.blog}}">{{userInfo.blog}}</a>
+  </div>
+  <div class="user__joined">
+    <i class="fas fa-calendar-alt"></i>
+    <p>Joined {{userInfo.joined}}</p>
+  </div>
+  <div class="user__born">
+    <i class="fas fa-info-circle"></i>
+      <p>Born on {{userInfo.born}}</p>
+    </div>
+</div>

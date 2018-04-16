@@ -5,15 +5,15 @@
 
   <div class="profile__container">
 
-    <div class="twitter__container--left">
-
+    <div class="profile__container--left">
+      <app-userprofileinfo [userInfo]="userInfo"></app-userprofileinfo>
     </div>
 
-    <div class="twitter__container--center">
+    <div class="profile__container--center">
       <app-tweets></app-tweets>
     </div>
 
-    <div class="twitter__container--right">
+    <div class="profile__container--right">
       <app-yourtrends></app-yourtrends>
     </div>
 

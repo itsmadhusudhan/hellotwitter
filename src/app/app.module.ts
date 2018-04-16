@@ -20,13 +20,14 @@ import { NotificationlayoutComponent } from './notificationlayout/notificationla
 import { NotificationsComponent } from './notifications/notifications.component';
 import { MomentslayoutComponent } from './momentslayout/momentslayout.component';
 import { MomentsnavbarComponent } from './momentsnavbar/momentsnavbar.component';
+import { UserprofileinfoComponent } from './userprofileinfo/userprofileinfo.component';
 
 //Routes
 const appRoutes: Routes = [
   { path: "", component: HomelayoutComponent, pathMatch: 'full' },
   {path:"moments", component:MomentslayoutComponent},
   {path:"notifications", component:NotificationlayoutComponent},  
-  { path: "itsmadhusudhan", component: UserprofilelayoutComponent },
+  { path: "itsmadhusudhan", component: UserprofilelayoutComponent,data: { title: 'Madhusudhan R(@itsmadhusudhan)' }  },
   { path: "**", component: UserprofilelayoutComponent }
 ];
 
@@ -49,7 +50,8 @@ const appRoutes: Routes = [
     NotificationlayoutComponent,
     NotificationsComponent,
     MomentslayoutComponent,
-    MomentsnavbarComponent
+    MomentsnavbarComponent,
+    UserprofileinfoComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,49 @@
+.userprofileinfo__container{
+padding-top: 10px;
+padding-left: 10px;
+}
+
+.user{
+  padding-top: 10px;
+  font-size: 14px;
+  color:#0b3c49;
+  line-height: 14px;
+}
+
+.user:hover{
+  text-decoration: underline;
+}
+
+.user__fullname{
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.user__username{
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.user__desc{
+  color:#14171a;
+  line-height: 20px;
+}
+
+.user__desc:hover{
+  text-decoration: none;
+}
+
+.user__joined,.user__born{
+  color:#657786;
+  font-size: 14px;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  line-height: 14px;
+  
+}
+
+.user__joined p,.user__born p{
+  padding-left: 10px;
+}
+

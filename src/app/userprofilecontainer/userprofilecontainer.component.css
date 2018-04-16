@@ -9,8 +9,3 @@
   grid-template-columns: 290px 1fr 290px;
   grid-gap: 20px;
 }
-
-.twitter__container--right{
-  margin-top: -10px;
-
-}
