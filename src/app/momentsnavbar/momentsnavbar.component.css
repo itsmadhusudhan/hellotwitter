@@ -1,0 +1,139 @@
+.navbar {
+  background: #fff;
+  min-height: 2.9rem;
+  position: relative;
+  align-items: center;
+}
+
+@media screen and (min-width: 972px) {
+  .navbar {
+    display: flex;
+  }
+}
+
+.navbar__brand {
+  display: flex;
+  flex-shrink: 0;
+  align-items: stretch;
+  min-height: 2.9rem;
+}
+
+@media screen and (min-width: 972px) {
+  .navbar__brand {
+    align-items: center;
+  }
+}
+
+.navbar__brand .navbar__item {
+  font-size: 20px;
+}
+
+.navbar__menu {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  align-items: stretch;
+}
+
+@media screen and (min-width: 972px) {
+  .navbar__menu {
+    align-items: center;
+  }
+}
+
+.navbar__item,
+.navabar__link {
+  display: flex;
+  padding: 0.5rem 1rem;
+  position: relative;
+  line-height: 1.1;
+}
+
+.navbar__start {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: auto;
+  align-items: stretch;
+}
+
+.navbar__end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+  margin-left: auto;
+}
+
+
+/* specific to moments navbar */
+.moments__navbar--container {
+  padding: 0 80px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(38, 38, 38, 0.1);
+  position: fixed;
+  top: 3rem;
+  width: 100%;
+  z-index: 500;
+}
+
+.twitter__brand {
+  margin-left: -90px;
+  justify-content: flex-start;
+  border: none;
+}
+
+.twitter__brand .navbar__item {
+  border: none;
+}
+
+.navbar__item {
+  color: rgba(11, 60, 73, 0.75);
+  font-weight: 700;
+  padding: 0.6rem 1rem 0.5rem 1rem;
+  font-size: 0.8rem;
+  margin-bottom: -7px;
+}
+
+.navbar__item:hover {
+  color: rgb(11, 60, 73);
+  border-bottom: 2px solid rgb(11, 60, 73);
+  margin-bottom: -12px;
+}
+
+.navbar__item__active {
+  color: rgb(11, 60, 73);
+  border-bottom: 2px solid rgb(11, 60, 73);
+  margin-bottom: -12px;
+}
+
+.navbar__end .navbar__item:hover {
+  border: none;
+}
+
+
+.nav__end--item {
+  padding-right: 5px;
+  margin-top: -10px;
+  margin-bottom: 0px;
+}
+
+.nav__end--item:hover{
+  margin-bottom: 0;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  padding: 0.6rem 1.2rem;
+}
+
+.button--tweet {
+  border-radius: 20px;
+  border:1px solid rgba(11, 60, 73, 0.75);
+  margin-right: 5px;
+}
+
+.button--tweet:hover {
+  background: rgb(11, 60, 73);
+  color: #fff;
+  
+}
